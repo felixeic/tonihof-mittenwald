@@ -1,5 +1,5 @@
-@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/inter.woff2) format('woff2');}
-@font-face{font-family:'Playfair Display';font-style:normal;font-weight:400 900;font-display:swap;src:url(assets/fonts/playfair.woff2) format('woff2');}
+@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/inter.woff2?v=260c81a4) format('woff2');}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:400 900;font-display:swap;src:url(assets/fonts/playfair.woff2?v=ef05b30d) format('woff2');}
 
 :root {
   /* warm Karwendel materials */
