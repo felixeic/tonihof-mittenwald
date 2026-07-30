@@ -289,8 +289,15 @@ body.locked { overflow: hidden; }
 /* single-colour artwork: invert it on the dark ground so it stays visible */
 .partner-mark img.mono { filter: grayscale(1) opacity(.72) invert(var(--logo-invert)); }
 .partner:hover .partner-mark img.mono { filter: opacity(1) invert(var(--logo-invert)); }
+/* coloured artwork: flip lightness for the dark theme, then rotate the hue back
+   so the brand colour survives instead of turning into its complement */
+.partner-mark img.tint {
+  filter: grayscale(1) opacity(.72) invert(var(--logo-invert)) hue-rotate(calc(var(--logo-invert) * 180deg));
+}
+.partner:hover .partner-mark img.tint {
+  filter: opacity(1) invert(var(--logo-invert)) hue-rotate(calc(var(--logo-invert) * 180deg));
+}
 .partner-mark .wordmark-fallback { font-family: var(--serif); font-size: 1.45rem; letter-spacing: -0.01em; }
-.partner-mark .plate { background: #fff; padding: .5rem .7rem; display: inline-flex; }
 .partner h3 { font-size: 1.0625rem; font-family: var(--sans); font-weight: 600; letter-spacing: 0; }
 .partner .role { font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); }
 .partner p { color: var(--soft); font-size: 0.9375rem; line-height: 1.6; }
