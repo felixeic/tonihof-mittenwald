@@ -268,6 +268,8 @@
     margin-top: auto; display: inline-flex; align-items: center; min-height: 44px;
   }
   .practice .visit:hover, .practice .visit:focus-visible { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+  /* single-card variant — must follow the 700px rule above to win on source order */
+  .practices-one { grid-template-columns: 1fr; max-width: 560px; }
 
   /* limestone lockup */
   .lockup { display: block; width: clamp(150px, 17vw, 200px); height: auto; }
