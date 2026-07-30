@@ -6,8 +6,8 @@
 <title>Hotel Tonihof — Mittenwald</title>
 <meta name="description" content="Informationen zum geplanten Hotel Tonihof in Mittenwald: Bebauungsplan Nr. 43, Landschaft und Natur, Verkehr, Termine und Kontakt für Ihre Fragen." />
 <link rel="canonical" href="https://tonihof-mittenwald.de/" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%233E6B70' d='M2 26 12 9l6 10 3-5 9 12z'/%3E%3C/svg%3E" />
-<meta name="theme-color" content="#16191B" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F4F2EE'/%3E%3Cpath fill='%233D463D' d='M3 25 12 9l6 9 3-4 8 11z'/%3E%3C/svg%3E" />
+<meta name="theme-color" content="#F4F2EE" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Hotel Tonihof" />
 <meta property="og:locale" content="de_DE" />
@@ -16,413 +16,420 @@
 <meta property="og:url" content="https://tonihof-mittenwald.de/" />
 <meta property="og:image" content="https://tonihof-mittenwald.de/assets/og.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
+<link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="assets/fonts/playfair.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="topbar">
-  <div class="wrap topbar-inner">
-    <a class="wordmark" href="#top">Hotel Tonihof</a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Menü öffnen">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="navlinks" id="navlinks" aria-label="Seitenbereiche">
+<nav class="nav" data-over-hero="true" aria-label="Hauptnavigation">
+  <div class="nav-in">
+    <a class="brand" href="#top">HOTEL TONIHOF</a>
+    <div class="nav-links">
       <a href="#vorhaben">Das Vorhaben</a>
-      <a href="#natur">Landschaft</a>
+      <a href="#landschaft">Landschaft</a>
       <a href="#verkehr">Verkehr</a>
-      <a href="#limestone">Über uns</a>
+      <a href="#mittenwald">Für Mittenwald</a>
       <a href="#architekten">Architekten</a>
       <a href="#termine">Termine</a>
       <a href="#kontakt">Kontakt</a>
-    </nav>
+    </div>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-</header>
+</nav>
+
+<div class="overlay" id="menu" data-open="false">
+  <a href="#vorhaben">Das Vorhaben</a>
+  <a href="#landschaft">Landschaft</a>
+  <a href="#verkehr">Verkehr</a>
+  <a href="#mittenwald">Für Mittenwald</a>
+  <a href="#architekten">Architekten</a>
+  <a href="#termine">Termine</a>
+  <a href="#kontakt">Kontakt</a>
+</div>
+
+<div class="viewcursor" aria-hidden="true">Ansicht</div>
 
 <main id="top">
 
-  <div class="hero">
-    <img src="assets/hero-norden.jpg" alt="Visualisierung des Hotel Tonihof von Norden: der weiße Bauernhof zwischen hölzernen Stadl-Gebäuden vor der Abendkulisse des Karwendels." />
-    <div class="wrap hero-inner">
-      <p class="eyebrow">Markt Mittenwald &middot; Bebauungsplan Nr.&nbsp;43</p>
-      <h1>Hotel&nbsp;Tonihof</h1>
-      <div class="hero-rule"></div>
-      <p class="lead">Ein bestehender Hotelstandort in den Buckelwiesen soll neu entwickelt werden. Die Planung liegt jetzt öffentlich aus.</p>
-      <dl class="datebar">
-        <div>
-          <dt>Zufahrtsstraße</dt>
-          <dd>15.&nbsp;September 2026</dd>
-        </div>
-        <div>
-          <dt>Dialogveranstaltung</dt>
-          <dd>17.&nbsp;September 2026</dd>
-        </div>
-        <div>
-          <dt>Fragen?</dt>
-          <dd><a href="#kontakt" style="color:#F4F5F3">Schreiben Sie uns</a></dd>
-        </div>
+  <!-- I. ARRIVAL -->
+  <header class="hero">
+    <div class="hero-media">
+      <img src="assets/hero-1800.jpg" srcset="assets/hero-900.jpg 900w, assets/hero-1800.jpg 1800w" sizes="100vw" width="1800" height="1013" fetchpriority="high" decoding="async"
+           alt="Der Tonihof von Norden: das weiße Hofgebäude zwischen hölzernen Stadl vor der Abendkulisse des Karwendels." />
+    </div>
+    <div class="shell-wide hero-body">
+      <p class="eyebrow">Markt Mittenwald · Bebauungsplan Nr. 43</p>
+      <h1>Hotel Tonihof</h1>
+      <p class="hero-sub">Ein bestehender Hotelstandort in den Buckelwiesen soll neu entwickelt werden. Die Planung liegt öffentlich aus.</p>
+    </div>
+    <div class="shell-wide">
+      <dl class="hero-foot">
+        <div><dt>Zufahrtsstraße</dt><dd>15. September 2026</dd></div>
+        <div><dt>Dialogveranstaltung</dt><dd>17. September 2026</dd></div>
+        <div><dt>Fragen?</dt><dd><a href="#kontakt">Schreiben Sie uns</a></dd></div>
       </dl>
     </div>
-  </div>
+  </header>
 
-  <section id="vorhaben">
-    <div class="wrap sec-grid reveal">
+  <!-- II. DAS VORHABEN -->
+  <section class="band" id="vorhaben">
+    <div class="shell center-stack rv">
       <p class="eyebrow">Das Vorhaben</p>
-      <div class="sec-body">
-        <h2>Ein Hotel, wo schon eines steht</h2>
-        <div class="prose">
-          <p class="lead">Der Tonihof ist seit Jahrzehnten Hotelstandort und im Flächennutzungsplan bereits als Sondergebiet Hotel dargestellt. Es geht nicht um eine neue Fläche auf der grünen Wiese, sondern um die Weiterentwicklung eines vorhandenen Betriebs.</p>
-          <p>Geplant sind rund 120 Zimmer: im erhaltenen Hofgebäude, in zwei in den Hang gelegten Zimmertrakten und in freistehenden Stadl. Restaurant, Bar und Biergarten stehen auch Gästen aus der Umgebung offen. Alle Stellplätze liegen in der Tiefgarage, damit keine Autos in der Landschaft stehen.</p>
-        </div>
-        <div class="stats">
-          <div class="stat"><span class="stat-num">~120</span><span class="stat-lab">Hotelzimmer</span></div>
-          <div class="stat"><span class="stat-num">3,98 <span>ha</span></span><span class="stat-lab">Plangebiet</span></div>
-          <div class="stat"><span class="stat-num">118</span><span class="stat-lab">Stellplätze in der Tiefgarage</span></div>
-          <div class="stat"><span class="stat-num">Bestand</span><span class="stat-lab">Bestehender Tonihof als zentraler Anker</span></div>
-        </div>
+      <h2>Ein Hotel, wo schon eines steht</h2>
+      <p class="lede">Der Tonihof ist seit Jahrzehnten Hotelstandort und im Flächennutzungsplan bereits als Sondergebiet Hotel dargestellt. Es geht nicht um eine neue Fläche auf der grünen Wiese, sondern um die Weiterentwicklung eines vorhandenen Betriebs. Geplant sind rund 120 Zimmer: im erhaltenen Hofgebäude, in zwei in den Hang gelegten Zimmertrakten und in freistehenden Stadl. Restaurant, Bar und Biergarten stehen auch Gästen aus der Umgebung offen. Alle Stellplätze liegen in der Tiefgarage, damit keine Autos in der Landschaft stehen.</p>
+      <hr class="mini-rule" />
+      <div class="statrow">
+        <div class="statcell"><b>~120</b><span>Hotelzimmer</span></div>
+        <div class="statcell"><b>3,98 ha</b><span>Plangebiet</span></div>
+        <div class="statcell"><b>118</b><span>Stellplätze in der Tiefgarage</span></div>
       </div>
     </div>
   </section>
 
-  <figure class="figure reveal">
-    <img src="assets/tonihof-sued.jpg" alt="Der bestehende Tonihof von Süden mit Gastterrasse, daneben ein neuer Gebäudeteil in Holzlamellen." />
-    <figcaption>Das bestehende Hofgebäude bleibt erhalten &mdash; Ansicht von Süden</figcaption>
+  <figure class="imgband rv">
+    <img src="assets/sued-1700.jpg" srcset="assets/sued-900.jpg 900w, assets/sued-1700.jpg 1700w" sizes="100vw" width="1700" height="956" loading="lazy" decoding="async"
+         alt="Der bestehende Tonihof von Süden mit Gastterrasse, daneben ein neuer Gebäudeteil in Holzlamellen." />
+    <figcaption>Der bestehende Tonihof bleibt zentraler Anker der Anlage — Ansicht von Süden</figcaption>
   </figure>
 
-  <section id="natur">
-    <div class="wrap sec-grid reveal">
-      <p class="eyebrow">Landschaft</p>
-      <div class="sec-body">
-        <h2>Die Wiesen sind der empfindlichste Punkt</h2>
-        <div class="prose">
-          <p class="lead">Das Grundstück liegt am Rand des FFH-Gebiets „Mittenwalder Buckelwiesen“. Der Umweltbericht benennt die stärksten Auswirkungen offen: die Bauphase und der Flächenverbrauch. Betroffen sind gesetzlich geschützte Wiesen.</p>
-        </div>
+  <!-- III. LANDSCHAFT -->
+  <section class="band" id="landschaft">
+    <div class="shell asym">
+      <div class="rv">
+        <p class="eyebrow">Landschaft</p>
+        <h2 style="font-size:clamp(1.9rem,4.4vw,3rem);margin-block:1.1rem 1.6rem">Die Wiesen sind der empfindlichste Punkt</h2>
+        <p class="lede" style="margin-bottom:2.2rem">Das Grundstück liegt am Rand des FFH-Gebiets „Mittenwalder Buckelwiesen“. Der Umweltbericht benennt die stärksten Auswirkungen offen: die Bauphase und der Flächenverbrauch. Betroffen sind gesetzlich geschützte Wiesen.</p>
         <ul class="ticks">
-          <li>Geschützte Biotope müssen 1:1 wiederhergestellt werden &mdash; auf fünf Ausgleichsflächen im Plangebiet und einer Fläche des Marktes Mittenwald.</li>
+          <li>Geschützte Biotope müssen 1:1 wiederhergestellt werden — auf fünf Ausgleichsflächen im Plangebiet und einer Fläche des Marktes Mittenwald.</li>
           <li>Die Rasensoden werden vor dem Bau abgetragen, gesichert und wieder eingebaut. Gepflegt wird extensiv: ein bis zwei Mahden, keine Düngung, keine Mähroboter.</li>
           <li>Ein großer Teil des Gebäudevolumens liegt im Hang oder unter begrünten Dächern.</li>
         </ul>
       </div>
+      <div class="asym-side rv">
+        <img src="assets/biergarten-1500.jpg" srcset="assets/biergarten-800.jpg 800w, assets/biergarten-1500.jpg 1500w" sizes="(min-width:940px) 40vw, 100vw" width="1500" height="844" loading="lazy" decoding="async"
+             alt="Biergarten zwischen den Gebäuden mit Biertischen im Gras und Blick auf die Berge." />
+        <blockquote class="pullquote">„Alpstein Architekten sind mit Herzblut Allgäuer. Wir gestalten unsere Heimat, gehen sorgfältig mit ihren Ressourcen um.“<cite>Alpstein Architekten</cite></blockquote>
+      </div>
     </div>
   </section>
 
-  <section id="verkehr">
-    <div class="wrap sec-grid reveal">
+  <hr class="rule" />
+
+  <!-- IV. VERKEHR -->
+  <section class="band" id="verkehr">
+    <div class="shell rv">
       <p class="eyebrow">Verkehr</p>
-      <div class="sec-body">
-        <h2>Mehr Verkehr als heute. Hier sind die Zahlen.</h2>
-        <div class="tablewrap">
-          <table>
-            <thead>
-              <tr><th scope="col">Situation</th><th scope="col">Fahrten pro Tag</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Heute, gezählt an der Einmündung</td><td>rund 130</td></tr>
-              <tr><td>Künftig, normaler Tag</td><td>rund 350</td></tr>
-              <tr><td>Künftig, Spitzentag (Freitag)</td><td>rund 650</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="prose">
-          <p>Begrenzt werden soll das durch Sammelfahrten für Mitarbeitende, Abholung der Gäste von Bahnhof und Flughafen, Leihräder und eine Online-Reservierung, die für Tagesgäste Tisch und Stellplatz zusammen vergibt.</p>
-          <p>Zur Zufahrtsstraße gibt es am 15.&nbsp;September eine eigene Informationsveranstaltung.</p>
-        </div>
+      <h2 style="font-size:clamp(1.9rem,4.4vw,3rem);margin-block:1.1rem 2.6rem">Mehr Verkehr als heute. Hier sind die Zahlen.</h2>
+      <div class="datarows">
+        <div class="datarow"><span>Heute, gezählt an der Einmündung</span><b>130</b></div>
+        <div class="datarow"><span>Künftig, normaler Tag</span><b>350</b></div>
+        <div class="datarow"><span>Künftig, Spitzentag (Freitag)</span><b>650</b></div>
       </div>
+      <p class="lede" style="margin-top:2rem;max-width:640px">Kfz-Fahrten pro Tag. Begrenzt werden soll das durch Sammelfahrten für Mitarbeitende, Abholung der Gäste von Bahnhof und Flughafen, Leihräder und eine Online-Reservierung, die für Tagesgäste Tisch und Stellplatz zusammen vergibt. Zur Zufahrtsstraße gibt es am <a class="ulink" href="#termine">15. September eine eigene Informationsveranstaltung</a>.</p>
     </div>
   </section>
 
-  <figure class="figure reveal">
-    <img src="assets/biergarten.jpg" alt="Biergarten zwischen den Gebäuden mit Biertischen im Gras, Apfelbaum und Blick auf die Berge." />
-    <figcaption>Biergarten und Wirtshaus sind auch für Gäste aus dem Ort gedacht</figcaption>
-  </figure>
+  <hr class="rule" />
 
-  <section id="mittenwald">
-    <div class="wrap sec-grid reveal">
+  <!-- V. FÜR MITTENWALD -->
+  <section class="band" id="mittenwald">
+    <div class="shell rv">
       <p class="eyebrow">Für Mittenwald</p>
-      <div class="sec-body">
-        <h2>Was der Ort davon hat</h2>
-        <ul class="ticks">
-          <li><strong>Ein Wirtshaus, das offen ist.</strong> Restaurant, Bar und Biergarten für Einheimische, Wanderer und Radfahrer.</li>
-          <li><strong>Arbeitsplätze über das ganze Jahr.</strong> Nicht nur in der Saison.</li>
-          <li><strong>Der Tonihof bleibt bestehen.</strong> Das ortsbildprägende Gebäude wird erhalten, die Wander- und Radwege bleiben nutzbar.</li>
-        </ul>
+      <h2 style="font-size:clamp(1.9rem,4.4vw,3rem);margin-block:1.1rem 3rem">Was der Ort davon hat</h2>
+      <div class="threeup">
+        <div class="upitem">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 27h24M6 27V13l10-7 10 7v14M13 27v-7h6v7"/></svg>
+          <h3>Ein Wirtshaus, das offen ist</h3>
+          <p>Restaurant, Bar und Biergarten für Einheimische, Wanderer und Radfahrer — nicht nur für Hotelgäste.</p>
+        </div>
+        <div class="upitem">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="10" r="5"/><path d="M5 28c0-6.1 4.9-11 11-11s11 4.9 11 11"/></svg>
+          <h3>Arbeitsplätze über das ganze Jahr</h3>
+          <p>Küche, Service, Reinigung, Verwaltung und Wellness — nicht nur in der Saison.</p>
+        </div>
+        <div class="upitem">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 26h26M7 26V12l9-6 9 6v14M12 26v-6h8v6M16 3v3"/></svg>
+          <h3>Der Tonihof bleibt bestehen</h3>
+          <p>Das ortsbildprägende Gebäude wird erhalten, die Wander- und Radwege bleiben nutzbar.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="limestone">
-    <div class="wrap sec-grid reveal">
+  <hr class="rule" />
+
+  <!-- VI. WER DAHINTER STEHT -->
+  <section class="band" id="architekten">
+    <div class="shell rv">
       <p class="eyebrow">Wer dahinter steht</p>
-      <div class="sec-body">
-        <h2>Vorhabenträger und Projektsteuerung</h2>
-        <img class="lockup lockup-themed" src="assets/limestone.png" alt="Limestone Capital" width="620" height="222" />
-        <div class="prose">
-          <p class="lead">Vorhabenträger ist die Buckelwiesen GmbH, eine Gesellschaft von Limestone Capital. Limestone ist ein Investmentunternehmen mit Büros in der Schweiz, in Portugal und in Großbritannien und auf Immobilien und Hotellerie spezialisiert.</p>
-          <p>Der Tonihof soll als Haus der Hotelmarke Aethos entwickelt und betrieben werden. Aethos führt unter anderem Häuser auf Mallorca, in Ericeira, Mailand, Monterosa und London. Es sind bewusst kleine Häuser, die von ihrem Ort leben &mdash; kein Kettenprodukt und keine Bettenburg.</p>
-          <p class="about-quote">„We believe true value lies in the art of transformation.“</p>
-          <p><a href="https://www.limestone-capital.com/" target="_blank" rel="noopener noreferrer">limestone-capital.com</a></p>
-        </div>
-        <div class="practices practices-one">
-          <div class="practice">
-            <span class="brandplate"><img src="assets/kvl.png" alt="KVL — for better results" width="520" height="226" /></span>
-            <h3>KVL Projektentwicklung Plus GmbH</h3>
-            <p class="where">Projektentwicklung &amp; Projektsteuerung</p>
-            <p class="who">Katja Herter <span>&mdash; Projektleitung</span></p>
-            <p>Die KVL Group steuert das Vorhaben für den Vorhabenträger: Termine, Kosten und Qualitäten sowie die Abstimmung zwischen Architekten, Fachgutachtern und dem Markt Mittenwald. Auch das Projektpostfach dieser Seite wird von KVL betreut &mdash; deshalb erreichen Sie uns unter einer Adresse von kvlgroup.com.</p>
-            <a class="visit" href="https://www.kvlgroup.com/" target="_blank" rel="noopener noreferrer">kvlgroup.com</a>
+      <h2 style="font-size:clamp(1.9rem,4.4vw,3rem);margin-block:1.1rem 3rem">Vorhabenträger, Steuerung und Entwurf</h2>
+
+      <div class="partners">
+        <article class="partner">
+          <div class="partner-mark"><img class="lockup" src="assets/limestone.png" alt="Limestone Capital" width="620" height="222" loading="lazy" /></div>
+          <h3>Buckelwiesen GmbH</h3>
+          <p class="role">Vorhabenträger</p>
+          <p>Eine Gesellschaft von Limestone Capital, einem Investmentunternehmen mit Büros in der Schweiz, Portugal und Großbritannien, spezialisiert auf Immobilien und Hotellerie.</p>
+          <p class="pullquote" style="font-size:1rem;line-height:1.5;margin-top:.4rem">„We believe true value lies in the art of transformation.“</p>
+          <a class="ulink" href="https://www.limestone-capital.com/" target="_blank" rel="noopener noreferrer">limestone-capital.com</a>
+        </article>
+
+        <article class="partner">
+          <div class="partner-mark"><span class="wordmark-fallback">aethos</span></div>
+          <h3>Aethos Hotels</h3>
+          <p class="role">Hotelmarke und Betrieb</p>
+          <p>Der Tonihof soll als Haus der Marke Aethos betrieben werden. Aethos führt unter anderem Häuser auf Mallorca, in Ericeira, Mailand, Monterosa und London — bewusst kleine Häuser, die von ihrem Ort leben.</p>
+          <a class="ulink" href="https://www.aethos.com/" target="_blank" rel="noopener noreferrer">aethos.com</a>
+        </article>
+
+        <article class="partner">
+          <div class="partner-mark"><span class="plate"><img src="assets/kvl.png" alt="KVL — for better results" width="520" height="226" loading="lazy" /></span></div>
+          <h3>KVL Projektentwicklung Plus GmbH</h3>
+          <p class="role">Projektentwicklung &amp; Steuerung</p>
+          <p>Katja Herter leitet das Projekt. KVL steuert Termine, Kosten und Qualitäten und stimmt zwischen Architekten, Fachgutachtern und dem Markt Mittenwald ab — und betreut das Projektpostfach dieser Seite.</p>
+          <a class="ulink" href="https://www.kvlgroup.com/" target="_blank" rel="noopener noreferrer">kvlgroup.com</a>
+        </article>
+
+        <article class="partner">
+          <div class="partner-mark"><span class="wordmark-fallback">noa*</span></div>
+          <h3>noa* network of architecture</h3>
+          <p class="role">Entwurf · Bozen &amp; Berlin</p>
+          <p>Von Lukas Rungger und Stefan Rier gegründet. Das Büro ist für Hotel- und Wellnesskonzepte im Alpenraum bekannt, die aus dem jeweiligen Ort heraus entwickelt werden.</p>
+          <a class="ulink" href="https://www.noa.network/" target="_blank" rel="noopener noreferrer">noa.network</a>
+        </article>
+
+        <article class="partner">
+          <div class="partner-mark"><span class="wordmark-fallback">Alpstein</span></div>
+          <h3>Alpstein Architekten</h3>
+          <p class="role">Umsetzung · Immenstadt im Allgäu</p>
+          <p>1994 von Felix Schädler gegründet, mit Schwerpunkt auf Hotel- und Tourismusbauten in der Region. Alpstein übernimmt die Umsetzung vor Ort.</p>
+          <a class="ulink" href="https://alpstein-architektur.de/startseite.html" target="_blank" rel="noopener noreferrer">alpstein-architektur.de</a>
+        </article>
+
+        <article class="partner">
+          <div class="partner-mark"><span class="wordmark-fallback">AGL · Ingevost</span></div>
+          <h3>Fachgutachten</h3>
+          <p class="role">Umwelt, Natur und Verkehr</p>
+          <p>AGL Arbeitsgruppe für Landnutzungsplanung verantwortet Umweltbericht, FFH-Verträglichkeitsstudie und Grünordnung. Ingevost hat die Verkehrsuntersuchung erstellt.</p>
+        </article>
+      </div>
+
+      <div class="acc" style="margin-top:clamp(3rem,6vh,5rem)">
+        <details>
+          <summary>Die Entwurfsleitung</summary>
+          <div class="accbody">
+            <p class="meta">Lukas Rungger — noa* network of architecture</p>
+            <p>Mitgründer des Büros mit Standorten in Bozen und Berlin. Verantwortet den Entwurf: die Setzung der Baukörper im Hang, die Stadl im Gelände und den Wellnessbereich unter dem begrünten Dach.</p>
+            <p class="meta" style="margin-top:.8rem">Sebastian Rohse — Alpstein Architekten</p>
+            <p>Geschäftsführung bei Alpstein und Projektleitung vor Ort. Alpstein bringt die Erfahrung mit Hotel- und Tourismusbauten im Alpenraum ein und führt den Entwurf in die Umsetzung.</p>
           </div>
-        </div>
+        </details>
       </div>
     </div>
   </section>
 
-  <section id="architekten">
-    <div class="wrap sec-grid reveal">
-      <p class="eyebrow">Die Architekten</p>
-      <div class="sec-body">
-        <h2>Entworfen von zwei Büros aus den Alpen</h2>
-        <div class="prose">
-          <p class="lead">Die Planung entsteht in Zusammenarbeit von noa* aus Bozen und Alpstein Architekten aus dem Allgäu. Beide Büros bauen seit Jahren im Alpenraum.</p>
-        </div>
-        <div class="practices">
-          <div class="practice">
-            <h3>noa* network of architecture</h3>
-            <p class="where">Bozen &amp; Berlin</p>
-            <p class="who">Lukas Rungger <span>— Gründer, Entwurfsleitung</span></p>
-            <p>Von Lukas Rungger und Stefan Rier gegründet. Das Büro ist für Hotel- und Wellnesskonzepte im Alpenraum bekannt, die aus dem jeweiligen Ort heraus entwickelt werden.</p>
-            <a class="visit" href="https://www.noa.network/" target="_blank" rel="noopener noreferrer">noa.network</a>
-          </div>
-          <div class="practice">
-            <h3>Alpstein Architekten</h3>
-            <p class="where">Immenstadt im Allgäu</p>
-            <p class="who">Sebastian Rohse <span>— Geschäftsführung, Projektleitung</span></p>
-            <p>1994 von Felix Schädler gegründet, mit Schwerpunkt auf Hotel- und Tourismusbauten in der Region. Alpstein übernimmt die Umsetzung vor Ort.</p>
-            <a class="visit" href="https://alpstein-architektur.de/startseite.html" target="_blank" rel="noopener noreferrer">alpstein-architektur.de</a>
-          </div>
-        </div>
-        <p class="about-quote">„Alpstein Architekten sind mit Herzblut Allgäuer. Wir gestalten unsere Heimat, gehen sorgfältig mit ihren Ressourcen um.“</p>
-      </div>
-    </div>
-  </section>
+  <hr class="rule" />
 
-  <section id="termine">
-    <div class="wrap sec-grid reveal">
+  <!-- VII. TERMINE -->
+  <section class="band" id="termine">
+    <div class="shell rv">
       <p class="eyebrow">Termine</p>
-      <div class="sec-body">
-        <h2>Wie es weitergeht</h2>
-        <ol class="timeline">
-          <li data-now>
-            <span class="when">Jetzt</span>
-            <span class="what"><em>Die Planung liegt öffentlich aus</em></span>
-          </li>
-          <li>
-            <span class="when">15. September 2026</span>
-            <span class="what"><em>Informationsveranstaltung zur Zufahrtsstraße</em></span>
-          </li>
-          <li>
-            <span class="when">17. September 2026</span>
-            <span class="what"><em>Öffentliche Dialogveranstaltung zum Projekt</em></span>
-          </li>
-          <li>
-            <span class="when">Danach</span>
-            <span class="what"><em>Abwägung im Marktgemeinderat</em></span>
-          </li>
-        </ol>
-        <div class="prose">
-          <p>Eine <em>formelle</em> Stellungnahme richten Sie bitte innerhalb der Auslegungsfrist an den Markt Mittenwald &mdash; nur so wird sie im Verfahren abgewogen. Termine und Fristen macht der Markt öffentlich bekannt.</p>
+      <h2 style="font-size:clamp(1.9rem,4.4vw,3rem);margin-block:1.1rem 3rem">Wie es weitergeht</h2>
+      <div class="tl">
+        <div class="tl-item" data-now>
+          <p class="tl-date">Jetzt</p>
+          <div class="tl-text"><b>Die Planung liegt öffentlich aus</b>Bebauungsplan, Umweltbericht, Verkehrsuntersuchung und Erschließungsplanung liegen beim Markt Mittenwald zur Einsicht.</div>
+        </div>
+        <div class="tl-item">
+          <p class="tl-date">15. September 2026</p>
+          <div class="tl-text"><b>Informationsveranstaltung zur Zufahrtsstraße</b>Ausbau, Breite und Bauzeit der Zufahrt von der St 2542.</div>
+        </div>
+        <div class="tl-item">
+          <p class="tl-date">17. September 2026</p>
+          <div class="tl-text"><b>Öffentliche Dialogveranstaltung</b>Fragen und Antworten mit dem Projektteam und den Fachgutachtern.</div>
+        </div>
+        <div class="tl-item">
+          <p class="tl-date">Danach</p>
+          <div class="tl-text"><b>Abwägung im Marktgemeinderat</b>Eine formelle Stellungnahme richten Sie bitte innerhalb der Auslegungsfrist an den Markt Mittenwald — nur so wird sie im Verfahren abgewogen.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="kontakt">
-    <div class="wrap sec-grid reveal">
-      <p class="eyebrow">Kontakt</p>
-      <div class="sec-body">
-        <h2>Ihre Frage erreicht uns direkt</h2>
-        <div class="prose">
-          <p class="lead">Wir lesen jede Nachricht und antworten. Was hier offen bleibt, nehmen wir in die Dialogveranstaltung am 17.&nbsp;September mit.</p>
-        </div>
+  <hr class="rule" />
 
-        <form class="form-grid" id="kontaktform" novalidate>
-          <div class="two">
-            <div class="field">
-              <label for="f-name">Name</label>
-              <input id="f-name" name="name" type="text" autocomplete="name" required />
-            </div>
-            <div class="field">
-              <label for="f-mail">E-Mail</label>
-              <input id="f-mail" name="mail" type="email" autocomplete="email" required />
-            </div>
-          </div>
-          <div class="field">
-            <label for="f-thema">Thema</label>
-            <select id="f-thema" name="thema">
-              <option>Verkehr und Zufahrt</option>
-              <option>Natur und Landschaft</option>
-              <option>Bauphase und Lärm</option>
-              <option>Angebot für Einheimische</option>
-              <option>Verfahren und Termine</option>
-              <option>Sonstiges</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="f-text">Ihre Frage oder Ihr Anliegen</label>
-            <textarea id="f-text" name="text" required></textarea>
-          </div>
-          <label class="consent">
-            <input type="checkbox" id="f-ok" required />
-            <span>Ich bin damit einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verwendet werden. Eine Weitergabe an Dritte erfolgt nicht.</span>
-          </label>
-          <button class="btn" type="submit">Nachricht per E-Mail senden</button>
-          <p class="form-status" id="formstatus" role="status" aria-live="polite"></p>
-          <p class="form-note">Es öffnet sich Ihr E-Mail-Programm mit der fertigen Nachricht. Oder schreiben Sie direkt an <a href="mailto:Tonihof@kvlgroup.com">Tonihof@kvlgroup.com</a>.</p>
-        </form>
+  <!-- VIII. KONTAKT -->
+  <section class="band" id="kontakt">
+    <div class="shell contact">
+      <div class="rv">
+        <p class="eyebrow">Kontakt</p>
+        <h2 style="margin-block:1.1rem 1.4rem">Ihre Frage erreicht uns direkt</h2>
+        <p class="lede">Wir lesen jede Nachricht und antworten. Was hier offen bleibt, nehmen wir in die Dialogveranstaltung am 17. September mit.</p>
+        <a class="maillink ulink" href="mailto:Tonihof@kvlgroup.com">Tonihof@kvlgroup.com</a>
       </div>
+
+      <form class="form rv" id="kontaktform" novalidate>
+        <div class="f2">
+          <div class="field"><label for="f-name">Name</label><input id="f-name" type="text" autocomplete="name" required /></div>
+          <div class="field"><label for="f-mail">E-Mail</label><input id="f-mail" type="email" autocomplete="email" required /></div>
+        </div>
+        <div class="field">
+          <label for="f-thema">Thema</label>
+          <select id="f-thema">
+            <option>Verkehr und Zufahrt</option>
+            <option>Natur und Landschaft</option>
+            <option>Bauphase und Lärm</option>
+            <option>Angebot für Einheimische</option>
+            <option>Verfahren und Termine</option>
+            <option>Sonstiges</option>
+          </select>
+        </div>
+        <div class="field"><label for="f-text">Ihre Frage oder Ihr Anliegen</label><textarea id="f-text" required></textarea></div>
+        <label class="consent">
+          <input type="checkbox" id="f-ok" required />
+          <span>Ich bin damit einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verwendet werden. Eine Weitergabe an Dritte erfolgt nicht.</span>
+        </label>
+        <button class="btn" type="submit">Nachricht senden</button>
+        <p class="status" id="formstatus" role="status" aria-live="polite"></p>
+        <p class="formnote">Es öffnet sich Ihr E-Mail-Programm mit der fertigen Nachricht.</p>
+      </form>
     </div>
   </section>
-
 </main>
 
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <h3>Vorhabenträger</h3>
-        <img class="lockup lockup-onink" src="assets/limestone.png" alt="Limestone Capital" width="620" height="222" style="width:150px;margin-bottom:1.1rem" />
-        <p>Buckelwiesen GmbH<br />Brienner Straße 45&nbsp;a&ndash;d<br />80333 München<br /><a href="tel:+4989262025522">+49&nbsp;89&nbsp;262025522</a><br /><a href="mailto:Tonihof@kvlgroup.com">Tonihof@kvlgroup.com</a></p>
+<footer class="foot">
+  <div class="shell-wide">
+    <div class="foot-in">
+      <a class="brand" href="#top">HOTEL TONIHOF</a>
+      <div class="foot-nav">
+        <a href="#vorhaben">Vorhaben</a>
+        <a href="#termine">Termine</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
       </div>
-      <div>
-        <h3>Standort</h3>
-        <p>Buckelwiesen&nbsp;3<br />82481 Mittenwald<br />Landkreis Garmisch-Partenkirchen</p>
-      </div>
-      <div>
-        <h3>Verfahren</h3>
-        <p>Vorhabenbezogener Bebauungsplan Nr.&nbsp;43<br />Sondergebiet „Hotel Tonihof“<br />Markt Mittenwald</p>
-      </div>
+      <span>Markt Mittenwald · Bebauungsplan Nr. 43</span>
     </div>
-    <hr class="foot-rule" />
-    <p class="foot-fine" style="margin-bottom:0.9rem"><a href="impressum.html">Impressum</a> &nbsp;·&nbsp; <a href="datenschutz.html">Datenschutz</a></p>
     <p class="foot-fine">
-      Zusammenfassung der zur Offenlage ausgelegten Unterlagen (Stand 30.&nbsp;Juli 2026). Maßgeblich sind allein die beim Markt Mittenwald ausgelegten Originalunterlagen. Visualisierungen zeigen einen Planungsstand und keine Bauausführung.<br />
-      Visualisierungen: NOA&nbsp;Studio &middot; Alpstein Architekten. Diese Seite verwendet keine Cookies und kein Tracking.
+      Buckelwiesen GmbH, Brienner Straße 45 a–d, 80333 München · <a href="tel:+4989262025522">+49 89 262025522</a> · <a href="mailto:Tonihof@kvlgroup.com">Tonihof@kvlgroup.com</a><br />
+      Zusammenfassung der zur Offenlage ausgelegten Unterlagen (Stand 30. Juli 2026). Maßgeblich sind allein die beim Markt Mittenwald ausgelegten Originalunterlagen. Visualisierungen zeigen einen Planungsstand und keine Bauausführung. Visualisierungen: NOA Studio · Alpstein Architekten. Diese Seite verwendet keine Cookies und kein Tracking.
     </p>
   </div>
 </footer>
 <script>
 (function () {
-    /* This file is served inside a host-provided <head>, and is also meant to be
-       deployed as a standalone page. Guarantee the two document-level things the
-       layout depends on, without assuming either is already present. */
-    if (!document.querySelector('meta[name="viewport"]')) {
-      var mv = document.createElement('meta');
-      mv.name = 'viewport';
-      mv.content = 'width=device-width, initial-scale=1, viewport-fit=cover';
-      document.head.appendChild(mv);
-    }
-    if (!document.documentElement.lang) { document.documentElement.lang = 'de'; }
+  if (!document.querySelector('meta[name="viewport"]')) {
+    var mv = document.createElement('meta');
+    mv.name = 'viewport';
+    mv.content = 'width=device-width, initial-scale=1, viewport-fit=cover';
+    document.head.appendChild(mv);
+  }
+  if (!document.documentElement.lang) document.documentElement.lang = 'de';
 
-    /* ---- mobile menu ---- */
-    var topbar = document.querySelector('.topbar');
-    var toggle = document.querySelector('.nav-toggle');
-    var panel  = document.getElementById('navlinks');
-    var desktop = window.matchMedia('(min-width: 900px)');
+  var nav = document.querySelector('.nav');
+  var burger = document.querySelector('.burger');
+  var menu = document.getElementById('menu');
+  var hero = document.querySelector('.hero');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    function syncTopbarHeight() {
-      document.documentElement.style.setProperty('--topbar-h', topbar.offsetHeight + 'px');
-    }
-    syncTopbarHeight();
-    window.addEventListener('resize', syncTopbarHeight);
+  /* --- nav: blur past 80px, and light-on-dark while over the hero --- */
+  function onScroll() {
+    nav.setAttribute('data-stuck', window.scrollY > 80 ? 'true' : 'false');
+    var overHero = hero && (hero.getBoundingClientRect().bottom > 76);
+    nav.setAttribute('data-over-hero', overHero && !isOpen() ? 'true' : 'false');
+  }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
 
-    function isOpen() { return toggle.getAttribute('aria-expanded') === 'true'; }
-
-    function openNav() {
-      topbar.setAttribute('data-open', 'true');
-      toggle.setAttribute('aria-expanded', 'true');
-      toggle.setAttribute('aria-label', 'Menü schließen');
-      document.body.classList.add('nav-open');
-    }
-    function closeNav(returnFocus) {
-      topbar.setAttribute('data-open', 'false');
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.setAttribute('aria-label', 'Menü öffnen');
-      document.body.classList.remove('nav-open');
-      if (returnFocus) { toggle.focus(); }
-    }
-
-    toggle.addEventListener('click', function () {
-      if (isOpen()) { closeNav(false); } else { openNav(); }
-    });
-
-    /* a tap on a link closes first, then the browser jumps to the section */
-    panel.addEventListener('click', function (e) {
-      if (e.target.closest('a')) { closeNav(false); }
-    });
-
-    /* the dimmed area is the topbar's ::before, so those clicks land on .topbar */
-    topbar.addEventListener('click', function (e) {
-      if (isOpen() && e.target === topbar) { closeNav(false); }
-    });
-
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && isOpen()) { closeNav(true); }
-    });
-
-    /* never leave the menu stuck open when rotating up to desktop width */
-    var onBreakpoint = function () { if (desktop.matches && isOpen()) { closeNav(false); } };
-    if (desktop.addEventListener) { desktop.addEventListener('change', onBreakpoint); }
-    else if (desktop.addListener) { desktop.addListener(onBreakpoint); }
-
-    var els = document.querySelectorAll('.reveal');
-    if (!('IntersectionObserver' in window)) {
-      els.forEach(function (el) { el.classList.add('in'); });
+  /* --- full-screen overlay menu --- */
+  function isOpen() { return burger.getAttribute('aria-expanded') === 'true'; }
+  function setMenu(open) {
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+    menu.setAttribute('data-open', open ? 'true' : 'false');
+    document.body.classList.toggle('locked', open);
+    if (open) {
+      menu.querySelectorAll('a').forEach(function (a, i) { a.style.transitionDelay = (80 + i * 60) + 'ms'; });
     } else {
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-        });
-      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
-      els.forEach(function (el) { io.observe(el); });
+      menu.querySelectorAll('a').forEach(function (a) { a.style.transitionDelay = '0ms'; });
     }
+    onScroll();
+  }
+  burger.addEventListener('click', function () { setMenu(!isOpen()); });
+  menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && isOpen()) { setMenu(false); burger.focus(); }
+  });
+  var wide = window.matchMedia('(min-width: 1000px)');
+  (wide.addEventListener ? wide.addEventListener.bind(wide, 'change') : wide.addListener.bind(wide))(function () {
+    if (wide.matches && isOpen()) setMenu(false);
+  });
 
-    var form = document.getElementById('kontaktform');
-    var status = document.getElementById('formstatus');
-
-    form.addEventListener('submit', function (ev) {
-      ev.preventDefault();
-
-      var name = document.getElementById('f-name').value.trim();
-      var mail = document.getElementById('f-mail').value.trim();
-      var thema = document.getElementById('f-thema').value;
-      var text = document.getElementById('f-text').value.trim();
-      var ok = document.getElementById('f-ok').checked;
-
-      if (!name || !mail || !text) {
-        status.textContent = 'Bitte füllen Sie Name, E-Mail und Ihr Anliegen aus.';
-        return;
-      }
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail)) {
-        status.textContent = 'Diese E-Mail-Adresse sieht nicht vollständig aus. Bitte prüfen Sie sie.';
-        return;
-      }
-      if (!ok) {
-        status.textContent = 'Bitte bestätigen Sie noch das Häkchen zur Verwendung Ihrer Angaben.';
-        return;
-      }
-
-      var body =
-        'Thema: ' + thema + '\n' +
-        'Name: ' + name + '\n' +
-        'E-Mail: ' + mail + '\n\n' +
-        text + '\n\n' +
-        '— gesendet über die Projektseite Hotel Tonihof\n';
-
-      var href = 'mailto:Tonihof@kvlgroup.com'
-        + '?subject=' + encodeURIComponent('Hotel Tonihof — ' + thema)
-        + '&body=' + encodeURIComponent(body);
-
-      status.textContent = 'Ihr E-Mail-Programm wird geöffnet. Bitte dort noch auf „Senden“ klicken.';
-      window.location.href = href;
+  /* --- staggered reveal --- */
+  var groups = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window) || reduce) {
+    groups.forEach(function (g) { g.classList.add('in'); });
+  } else {
+    groups.forEach(function (g) {
+      Array.prototype.forEach.call(g.children, function (c, i) { c.style.transitionDelay = (i * 80) + 'ms'; });
     });
-  })();
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
+    groups.forEach(function (g) { io.observe(g); });
+  }
+
+  /* --- active section in nav --- */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav-links a'));
+  var targets = links.map(function (a) { return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if ('IntersectionObserver' in window && targets.length) {
+    var spy = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        links.forEach(function (a) {
+          a.setAttribute('aria-current', a.getAttribute('href') === '#' + e.target.id ? 'true' : 'false');
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    targets.forEach(function (t) { spy.observe(t); });
+  }
+
+  /* --- view cursor over imagery --- */
+  var cur = document.querySelector('.viewcursor');
+  if (cur && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    var imgs = document.querySelectorAll('.imgband img, .hero-media img, .asym-side img');
+    document.addEventListener('mousemove', function (e) {
+      cur.style.transform = 'translate(' + e.clientX + 'px,' + e.clientY + 'px) translate(-50%,-50%)' +
+        (cur.getAttribute('data-on') === 'true' ? ' scale(1)' : ' scale(.6)');
+    }, { passive: true });
+    imgs.forEach(function (im) {
+      im.addEventListener('mouseenter', function () { cur.setAttribute('data-on', 'true'); });
+      im.addEventListener('mouseleave', function () { cur.setAttribute('data-on', 'false'); });
+    });
+  }
+
+  /* --- contact form (mailto, unchanged behaviour) --- */
+  var form = document.getElementById('kontaktform');
+  var status = document.getElementById('formstatus');
+  form.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var name = document.getElementById('f-name').value.trim();
+    var mail = document.getElementById('f-mail').value.trim();
+    var thema = document.getElementById('f-thema').value;
+    var text = document.getElementById('f-text').value.trim();
+    if (!name || !mail || !text) { status.textContent = 'Bitte füllen Sie Name, E-Mail und Ihr Anliegen aus.'; return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail)) { status.textContent = 'Diese E-Mail-Adresse sieht nicht vollständig aus. Bitte prüfen Sie sie.'; return; }
+    if (!document.getElementById('f-ok').checked) { status.textContent = 'Bitte bestätigen Sie noch das Häkchen zur Verwendung Ihrer Angaben.'; return; }
+    var body = 'Thema: ' + thema + '\n' + 'Name: ' + name + '\n' + 'E-Mail: ' + mail + '\n\n' + text +
+               '\n\n— gesendet über die Projektseite Hotel Tonihof\n';
+    status.textContent = 'Ihr E-Mail-Programm wird geöffnet. Bitte dort noch auf „Senden“ klicken.';
+    window.location.href = 'mailto:Tonihof@kvlgroup.com?subject=' +
+      encodeURIComponent('Hotel Tonihof — ' + thema) + '&body=' + encodeURIComponent(body);
+  });
+})();
 </script>
 </body>
 </html>
