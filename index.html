@@ -30,6 +30,7 @@
       <a href="#natur">Landschaft</a>
       <a href="#verkehr">Verkehr</a>
       <a href="#limestone">Über uns</a>
+      <a href="#architekten">Architekten</a>
       <a href="#termine">Termine</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
@@ -163,6 +164,35 @@
     </div>
   </section>
 
+  <section id="architekten">
+    <div class="wrap sec-grid reveal">
+      <p class="eyebrow">Die Architekten</p>
+      <div class="sec-body">
+        <h2>Entworfen von zwei Büros aus den Alpen</h2>
+        <div class="prose">
+          <p class="lead">Die Planung entsteht in Zusammenarbeit von noa* aus Bozen und Alpstein Architekten aus dem Allgäu. Beide Büros bauen seit Jahren im Alpenraum.</p>
+        </div>
+        <div class="practices">
+          <div class="practice">
+            <h3>noa* network of architecture</h3>
+            <p class="where">Bozen &amp; Berlin</p>
+            <p class="who">Lukas Rungger <span>— Gründer, Entwurfsleitung</span></p>
+            <p>Von Lukas Rungger und Stefan Rier gegründet. Das Büro ist für Hotel- und Wellnesskonzepte im Alpenraum bekannt, die aus dem jeweiligen Ort heraus entwickelt werden.</p>
+            <a class="visit" href="https://www.noa.network/" target="_blank" rel="noopener noreferrer">noa.network</a>
+          </div>
+          <div class="practice">
+            <h3>Alpstein Architekten</h3>
+            <p class="where">Immenstadt im Allgäu</p>
+            <p class="who">Sebastian Rohse <span>— Geschäftsführung, Projektleitung</span></p>
+            <p>1994 von Felix Schädler gegründet, mit Schwerpunkt auf Hotel- und Tourismusbauten in der Region. Alpstein übernimmt die Umsetzung vor Ort.</p>
+            <a class="visit" href="https://alpstein-architektur.de/startseite.html" target="_blank" rel="noopener noreferrer">alpstein-architektur.de</a>
+          </div>
+        </div>
+        <p class="about-quote">„Alpstein Architekten sind mit Herzblut Allgäuer. Wir gestalten unsere Heimat, gehen sorgfältig mit ihren Ressourcen um.“</p>
+      </div>
+    </div>
+  </section>
+
   <section id="termine">
     <div class="wrap sec-grid reveal">
       <p class="eyebrow">Termine</p>
@@ -284,7 +314,7 @@
     var topbar = document.querySelector('.topbar');
     var toggle = document.querySelector('.nav-toggle');
     var panel  = document.getElementById('navlinks');
-    var desktop = window.matchMedia('(min-width: 760px)');
+    var desktop = window.matchMedia('(min-width: 900px)');
 
     function syncTopbarHeight() {
       document.documentElement.style.setProperty('--topbar-h', topbar.offsetHeight + 'px');
