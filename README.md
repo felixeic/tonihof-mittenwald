@@ -1,6 +1,6 @@
 # tonihof-mittenwald.de
 
-Bürgerinformationsseite zum vorhabenbezogenen Bebauungsplan Nr. 43
+Bürgerinformationsseite zum vorhabenbezogenen Bebauungsplan
 „Sondergebiet Hotel Tonihof“, Markt Mittenwald.
 
 Statische Website, keine Build-Tools, keine Abhängigkeiten.
