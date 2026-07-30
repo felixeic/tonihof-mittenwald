@@ -92,6 +92,9 @@ a { color: inherit; }
 }
 .ulink:hover::after, .ulink:focus-visible::after { width: 100%; }
 
+/* anchor targets clear the fixed nav */
+section[id], header[id] { scroll-margin-top: 92px; }
+
 /* ---------------- 0. NAV ---------------- */
 .nav {
   position: fixed; inset: 0 0 auto 0; z-index: 60;
