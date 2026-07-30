@@ -1,1 +1,11 @@
 .DS_Store
+
+# Never publish confidential company or tax documents from this directory.
+# The repo root is site/, so the planning PDFs, the Handelsregisterauszug and
+# the tax filings in the parent folder are already out of reach. These rules
+# guard against someone copying such a file in here later.
+*.pdf
+*USt*
+*HRB*
+*Steuer*
+*Handelsregister*
