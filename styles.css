@@ -270,6 +270,14 @@
   .practice .visit:hover, .practice .visit:focus-visible { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
   /* single-card variant — must follow the 700px rule above to win on source order */
   .practices-one { grid-template-columns: 1fr; max-width: 560px; }
+  /* partner logo keeps its brand colours, so it sits on its own white plate;
+     seamless on the light theme, a deliberate plate on the dark one */
+  .brandplate {
+    background: #FFFFFF; border: 1px solid var(--line);
+    padding: 0.8rem 1rem; align-self: flex-start; display: inline-flex;
+    margin-bottom: 0.35rem;
+  }
+  .brandplate img { display: block; width: clamp(110px, 15vw, 136px); height: auto; }
 
   /* limestone lockup */
   .lockup { display: block; width: clamp(150px, 17vw, 200px); height: auto; }
